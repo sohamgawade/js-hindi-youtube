@@ -21,18 +21,18 @@
 //but safety wise static is more safe than dynamic
 
 //1) Primitive Datatypes
-       Number => number
-       String  => string
-       Boolean  => boolean
-       null  => object
-       undefined  =>  undefined
-       Symbol  =>  symbol
-       BigInt  =>  bigint
+       //Number => number
+       //String  => string
+       //Boolean  => boolean
+       //null  => object
+       //undefined  =>  undefined
+      // Symbol  =>  symbol
+      // BigInt  =>  bigint
 
 // Non-primitive Datatypes
-       Arrays  =>  object
-       Function  =>  function
-       Object  =>  object
+       //Arrays  =>  object
+      // Function  =>  function
+      // Object  =>  object
 
 
 //interview q: javascipt is dynamicaly type or staticly type lang:
@@ -51,4 +51,40 @@
 //String name = "John"; // name is a variable of type String
 //JavaScript's dynamic typing allows for more flexibility but can lead to potential runtime errors if not handled carefully. Static typing, on the other hand, provides better type safety at the cost of some initial verbosity and strictness.
 
+
+//++++++++++++++++++memoary++++++++++
+
+
+//there are two types of memeoary first is stack memoary and another one is heap memoary
+
+
+//stack used is primitive,,, heap is used in non prmitive
+
+//jbhi apne stack memaory declare ki hogi thoapko uska copy mitla hai
+
+//jo bhi heap memaory me declare ki hogi wa se milta hai refrence means jo bhi change krenge wo original value me change hoga
+
+
+//this is example of call by value or in stack or primitive type
+let userName="dmvei"
+let userId=userName
+//console.log(userId)
+userId="dnveve"
+//console.log(userName)
+//console.log(userId)
+
+
+
+//example of heap meamoary or non primitive type or call by refrence
+let userOne=
+{
+      email:"soham@hhss",
+      upiId:"jndcijd"
+}
+let userTwo=userOne;
+//here fo accessing object is the syntax .email we learn further also but this type it is written keep in mind
+userTwo.email="hitesh@ihjeij";
+
+console.log(userOne.email)
+console.log(userTwo.email)
 
