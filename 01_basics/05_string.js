@@ -4,7 +4,7 @@ const repoCount=50
 //console.log(name + repoCount).  but is bad way of writing and not much readalble or simple way old schooltype 
 
 //console.log(`Hello my name is ${name} and my repo count is ${repoCount }`);  this is more readable and reliable way to write or show o/p
-
+//this is string interpolation way of of writing
 
 //aNOTHER WAY STRING IS DECLARED
 
